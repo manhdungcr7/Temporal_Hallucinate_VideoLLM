@@ -1,0 +1,35 @@
+# secrets: never commit
+remote_config*.json
+!remote_config.example.json
+*.env
+.kaggle/
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+env/
+
+# heavy files
+*.mp4
+*.wav
+*.zip
+*.pt
+*.pth
+*.safetensors
+*.npz
+*.npy
+
+# local results (commit text reports, not raw data)
+results/**/*.jsonl
+results/*.jsonl
+out/
+
+# generated job files with parameters (jobs/make_job.py output at the repo root)
+/b[0-9]*.py
+/gen_*.py
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
